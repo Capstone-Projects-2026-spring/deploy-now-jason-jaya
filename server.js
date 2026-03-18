@@ -38,8 +38,8 @@ app.get("/api/status", (req, res) => {
 });
 
 // Example API route — returns a greeting
-app.get("/api/greeting/:name?", (req, res) => {
-    const name = req.params.name || "Friend";
+app.get("/api/greeting", (req, res) => {
+    const name = req.query.name || "Friend";
     res.json({
         message: `Hello, ${name}!`,
         challenge: "Challenge 3 Complete",
