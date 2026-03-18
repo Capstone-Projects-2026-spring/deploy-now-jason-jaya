@@ -11,8 +11,8 @@
 // EXTENSION (Part 3+): Add new routes below to build a real API.
 // =============================================================================
 
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 const app = express();
 
@@ -22,10 +22,34 @@ const PORT = process.env.PORT || 8080;
 
 // Serve everything in the /public folder as static files.
 // When someone visits /, Express sends public/index.html automatically.
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
+
+// ========== CHALLENGE 3: API ROUTES ==========
+// Add API endpoints that return JSON.
+
+// Health check endpoint — returns server status
+app.get("/api/status", (req, res) => {
+    res.json({
+        status: "ok",
+        message: "Server is running",
+        timestamp: new Date().toISOString(),
+        uptime: process.uptime(),
+    });
+});
+
+// Example API route — returns a greeting
+app.get("/api/greeting/:name?", (req, res) => {
+    const name = req.params.name || "Friend";
+    res.json({
+        message: `Hello, ${name}!`,
+        challenge: "Challenge 3 Complete",
+    });
+});
+
+// ============================================
 
 // Start listening for incoming HTTP requests.
 app.listen(PORT, () => {
-  console.log(`Workshop app running → http://localhost:${PORT}`);
-  console.log(`Serving files from: ${path.join(__dirname, 'public')}`);
+    console.log(`Workshop app running → http://localhost:${PORT}`);
+    console.log(`Serving files from: ${path.join(__dirname, "public")}`);
 });

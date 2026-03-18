@@ -1,133 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jason Jaya | Deployment</title>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Jason Jaya | Deployment</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: #f8fafc;
-            color: #1e293b;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+            body {
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    sans-serif;
+                background: #f8fafc;
+                color: #1e293b;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-        /* ================= STUDENT EDIT ZONE ================= */
-        .student-banner {
-            width: 100%;
-            padding: 2.5rem 1rem;
-            text-align: center;
+            /* ================= STUDENT EDIT ZONE ================= */
+            .student-banner {
+                width: 100%;
+                padding: 2.5rem 1rem;
+                text-align: center;
 
-            /* Updated modern color */
-            background: #0f172a;
+                /* Updated modern color */
+                background: #0f172a;
 
-            color: white;
-        }
+                color: white;
+            }
 
-        .student-banner h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
+            .student-banner h1 {
+                font-size: 2.25rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
 
-        .student-banner .tagline {
-            font-size: 1.15rem;
-        }
-        /* ==================================================== */
+            .student-banner .tagline {
+                font-size: 1.15rem;
+            }
+            /* ==================================================== */
 
-        .content {
-            max-width: 680px;
-            width: 100%;
-            padding: 2rem 1rem;
-        }
+            .content {
+                max-width: 680px;
+                width: 100%;
+                padding: 2rem 1rem;
+            }
 
-        .card {
-            background: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.75rem;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-        }
+            .card {
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 0.75rem;
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+            }
 
-        .card h2 {
-            font-size: 0.85rem;
-            color: #475569;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 0.75rem;
-        }
+            .card h2 {
+                font-size: 0.85rem;
+                color: #475569;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                margin-bottom: 0.75rem;
+            }
 
-        .card p, .card li { color: #334155; line-height: 1.7; }
-        .card ul { padding-left: 1.25rem; }
-        .card li { margin-bottom: 0.3rem; }
+            .card p,
+            .card li {
+                color: #334155;
+                line-height: 1.7;
+            }
+            .card ul {
+                padding-left: 1.25rem;
+            }
+            .card li {
+                margin-bottom: 0.3rem;
+            }
 
-        .badge {
-            display: inline-block;
-            background: #14532d;
-            color: #86efac;
-            border: 1px solid #16a34a;
-            border-radius: 9999px;
-            padding: 0.2rem 0.65rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 0.6rem;
-        }
+            .badge {
+                display: inline-block;
+                background: #14532d;
+                color: #86efac;
+                border: 1px solid #16a34a;
+                border-radius: 9999px;
+                padding: 0.2rem 0.65rem;
+                font-size: 0.75rem;
+                font-weight: 600;
+                margin-bottom: 0.6rem;
+            }
 
-        .hint {
-            margin-top: 0.9rem;
-            background: #f1f5f9;
-            border: 2px dashed #94a3b8;
-            border-radius: 0.5rem;
-            padding: 0.8rem 1rem;
-            font-size: 0.85rem;
-            color: #475569;
-        }
+            .hint {
+                margin-top: 0.9rem;
+                background: #f1f5f9;
+                border: 2px dashed #94a3b8;
+                border-radius: 0.5rem;
+                padding: 0.8rem 1rem;
+                font-size: 0.85rem;
+                color: #475569;
+            }
 
-        code {
-            background: #f1f5f9;
-            padding: 0.15rem 0.4rem;
-            border-radius: 0.3rem;
-            font-family: 'Menlo', 'Consolas', monospace;
-            color: #b45309;
-            font-size: 0.9em;
-        }
-    </style>
-</head>
-<body>
+            code {
+                background: #f1f5f9;
+                padding: 0.15rem 0.4rem;
+                border-radius: 0.3rem;
+                font-family: "Menlo", "Consolas", monospace;
+                color: #b45309;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- STUDENT EDIT ZONE -->
+        <div class="student-banner">
+            <h1>👋 <strong>Jason Jaya</strong>!</h1>
+            <p class="tagline">SWE</p>
+        </div>
 
-    <!-- STUDENT EDIT ZONE -->
-    <div class="student-banner">
-        <h1>👋 <strong>Jason Jaya</strong>!</h1>
-        <p class="tagline">SWE</p>
-    </div>
-
-    <main class="content">
-
-        <div class="card">
-            <span class="badge">✅ Deployed Successfully</span>
-            <h2>Your App is Live</h2>
-            <p>If you can read this, your deployment worked. This page is being served by a Node.js + Express app running inside a Docker container.</p>
-            <div class="hint">
-                💡 <strong>Next:</strong> Keep iterating — push changes and watch automatic redeploys.
+        <main class="content">
+            <div class="card">
+                <span class="badge">✅ Deployed Successfully</span>
+                <h2>Your App is Live</h2>
+                <p>
+                    If you can read this, your deployment worked. This page is
+                    being served by a Node.js + Express app running inside a
+                    Docker container.
+                </p>
+                <div class="hint">
+                    💡 <strong>Next:</strong> Keep iterating — push changes and
+                    watch automatic redeploys.
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>What Just Happened?</h2>
-            <ul>
-                <li>You deployed a containerized app using Docker</li>
-                <li>Render built and ran your application</li>
-                <li>Your app is now publicly accessible via URL</li>
-                <li>Each git push triggers a redeployment</li>
-            </ul>
-        </div>
+            <div class="card">
+                <h2>What Just Happened?</h2>
+                <ul>
+                    <li>You deployed a containerized app using Docker</li>
+                    <li>Render built and ran your application</li>
+                    <li>Your app is now publicly accessible via URL</li>
+                    <li>Each git push triggers a redeployment</li>
+                </ul>
+            </div>
 
-    </main>
-
-</body>
+            <div class="card">
+                <h2>Explore More</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="/about.html"
+                            style="color: #0f172a; text-decoration: underline"
+                            >📖 Read the About page</a
+                        >
+                        — Challenge 2 complete
+                    </li>
+                    <li>
+                        <a
+                            href="/api/status"
+                            style="color: #0f172a; text-decoration: underline"
+                            >🔌 Check API status</a
+                        >
+                        — Challenge 3 complete
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>
